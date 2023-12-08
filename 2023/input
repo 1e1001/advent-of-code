@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+DAY=$1
+source ./common.sh
+curl -b "session=$AOC_SESSION" "https://adventofcode.com/2023/day/$DAY/input" >inputs/day$DAY.txt
+echo "https://adventofcode.com/2023/day/$DAY"

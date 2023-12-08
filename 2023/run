@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+DAY=$1
+PART=$2
+source ./common.sh
+cargo run --bin "day$DAY" "${@:3}" -- "$DAY" "$PART"
