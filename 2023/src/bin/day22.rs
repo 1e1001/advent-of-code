@@ -110,7 +110,6 @@ fn main() {
 			println!("f {} {} {} {}", vc + 4, vc + 5, vc + 7, vc + 6);
 			vc += 8;
 		}
-		print!("# ");
 		rects.len() - invalid.len()
 	});
 	part2(|input| {

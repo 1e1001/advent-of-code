@@ -3,6 +3,7 @@ pkgs.mkShell rec {
   buildInputs = with pkgs; [
     rustup
     pkg-config
+    graphviz
     # wl-clipboard
   ];
   LD_LIBRARY_PATH = "${pkgs.lib.makeLibraryPath buildInputs}";

@@ -14,7 +14,7 @@ fn part_common<T: Debug, F: FnOnce(&str) -> T>(f: F, part2: bool) {
 		let start = Instant::now();
 		let ans = f(text);
 		let len = start.elapsed();
-		println!(
+		eprintln!(
 			"PART {} (in {:?}): {:?}",
 			if part2 { "2" } else { "1" },
 			len,
